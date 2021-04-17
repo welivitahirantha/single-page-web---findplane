@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <div class="overlay" id="overlay">
+        <h3>downloading....</h3>
+    </div>
+
+    <div class="hero-bg">
+
+        <section class="top">
+            <header>
+                <a href="#">Anywhere anytime you go</a>
+            </header>
+
+            <h1><span>The best </span> Flight Experiance You Get</h1>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ut non perspiciatis neque ea.
+                Doloribus, excepturi. Similique ut ex voluptatum!</p>
+
+
+            <div class="form-container">
+                <form action="">
+                    <div class="form-left">
+                        <label for="city">Enter your city</label>
+                        <input type="text" name="city" id="city">
+                        <p>Example: "San Diego"</p>
+                    </div>
+
+                    <input type="button" value="Find Flights Now" id="cta-btn">
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <section class="authentic">
+        <div class="right-col">
+            <h2>Authentic. Awesome.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ad non rem. Possimus, iure
+                consectetur minus nemo rerum quisquam explicabo?</p>
+        </div>
+        <img src="images/food.jpg" alt="picture of a plane">
+    </section>
+
+    <script>
+        let btn = document.getElementById('cta-btn');
+        let overlay = document.getElementById('overlay');
+
+        btn.addEventListener('click', () => {
+            overlay.style.display = 'grid';
+            overlay.classList.add('animate-overlay')
+        })
+    </script>
+
+</body>
+
+</html>
